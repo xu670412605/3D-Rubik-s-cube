@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0; 
+            padding: 0;
+        }
+        	.wrap{
+        	width: 600px;
+            height: 600px;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg) rotateY(-50deg);
+            animation: rotate linear 20s infinite;
+        	margin: 0 auto;
+        	position: relative;
+        	top:100px;
+        	border: 1px solid #000000;
+        	}
+        	@-webkit-keyframes rotate{
+        		from{transform: rotateX(0deg) rotateY(0deg);}
+        		to{transform: rotateX(360deg) rotateY(360deg);}
+        	}
+        	
+			.f{
+				width: 100px;
+				height: 100px;
+				/*background: #028B9D;*/
+				border: 1px solid #000000;
+				box-sizing: border-box;
+				float: left;
+			}
+			.suoy{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				top:150px;
+				left: 150px;
+				
+				}
+				.wrap .front div{
+				background: #f61a34;
+				}
+				.wrap .back div{
+			 	background-color: #1ef063;
+			 	}
+				.wrap .left div{
+					background: #1acff6;
+				}
+				.wrap .right div{
+					background: #f6e91a;
+				}
+				.wrap .top div{
+					background:#ff8502;
+				}
+				.wrap .bottom div{
+					background: #0462F7;
+				}
+				
+				.wrap .front{
+				
+				transform: translateZ(150px);
+				transition-duration: 1s;
+			}
+			 	.wrap .back{
+			 	
+				transform: translateZ(-150px);
+				transition-duration: 1s;
+			}
+            	.wrap .left{
+    			transform: translateX(150px) rotateY(-90deg);
+    			transition-duration: 1s;
+        	}	
+        		.wrap .right{
+        			transform: rotateY(90deg) translateZ(-150px);
+        			transition-duration: 1s;
+        		}
+        		.wrap .top{
+        			transform:translateY(-150px) rotateX(90deg);
+        			transition-duration: 1s; 
+        		}
+        		.wrap .bottom{
+        			transform:translateY(150px) rotateX(-90deg); 
+        			transition-duration: 1s;
+        		}
+        		/*定义小图片*/
+        		.wrap span{
+        			display: block;
+        			width:100px ;
+        			height:100px;
+        			position: absolute;
+        			top:250px ;
+        			left:250px ;
+        		}
+        		.wrap .in_pic {
+            width: 100px;
+            height: 100px;
+        }
+        		.wrap .in_front{
+				
+				transform: translateZ(50px) ;
+			}
+			 	.wrap .in_back{
+			 	
+				transform: translateZ(-50px);
+			}
+            	.wrap .in_left{
+    			transform: translateX(50px) rotateY(-90deg);
+        	}	
+        		.wrap .in_right{
+        			transform: rotateY(90deg) translateZ(-50px);
+        		}
+        		.wrap .in_top{
+        			transform:translateY(-50px) rotateX(90deg); 
+        		}
+        		.wrap .in_bottom{
+        			transform:translateY(50px) rotateX(-90deg); 
+        		}
+        		
+        		/*鼠标移入时效果*/
+        		
+        		.wrap:hover .front{
+				transform: translateZ(250px) ;
+			}
+			 	.wrap:hover .back{
+			 	
+				transform: translateZ(-250px);
+			}
+            	.wrap:hover .left{
+    			transform: translateX(250px) rotateY(-90deg);
+        	}	
+        		.wrap:hover .right{
+        			transform: rotateY(90deg) translateZ(-250px);
+        		}
+        		.wrap:hover .top{
+        			transform:translateY(-250px) rotateX(90deg); 
+        		}
+        		.wrap:hover .bottom{
+        			transform:translateY(250px) rotateX(-90deg); 
+        		
+        		}
+        		.wrap:hover.f{
+					margin: 20px;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="front suoy">
+					<div class="f"></div>
+					<div class="f"></div>
+					<div class="f"></div>
+					<div class="f"></div>
+					<div class="f"></div>
+					<div class="f"></div>
+					<div class="f"></div>
+					<div class="f"></div>
+					<div class="f"></div>
+			</div>
+			<div class="back suoy">
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+			</div>
+			<div class="left suoy">
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+			</div>
+			<div class="right suoy">
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+			</div>
+			<div class="top suoy">
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+			</div>
+			<div class="bottom suoy">
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+			</div>
+			<!--内含小图片-->
+			<span class="in_front">
+                <img src="http://img.blog.csdn.net/20170716120759718" class="in_pic" />
+            </span>
+            <span class="in_back">
+                 <img src="http://img.blog.csdn.net/20170716120759718" class="in_pic" />
+            </span>
+            <span class="in_left">
+                <img src="http://img.blog.csdn.net/20170716120759718" class="in_pic" />
+            </span>
+            <span class="in_right">
+                <img src="http://img.blog.csdn.net/20170716120759718" class="in_pic" />
+            </span>
+            <span class="in_top">
+                <img src="http://img.blog.csdn.net/20170716120759718" class="in_pic" />
+            </span>
+            <span class="in_bottom">
+                <img src="http://img.blog.csdn.net/20170716120759718" class="in_pic" />
+            </span>
+		</div>
+	</body>
+</html>
